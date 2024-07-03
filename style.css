@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+}
+.container {
+    width: fit-content;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    min-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
+.container .productCardCon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container .productCardCon .imgCon {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .productCardCon .imgCon img:first-child {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container .productCardCon .imgCon img:last-child {
+    display: none;
+}
+.container .productCardCon .contentCon {
+    width: 50%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-inline: 15px;
+}
+.container .productCardCon .contentCon h1 {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    margin-top: 20px;
+}
+.container .productCardCon .contentCon h2 {
+    font-size: 30px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.container .productCardCon .contentCon p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-top: 20px;
+}
+.container .productCardCon .contentCon .priceFlex {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .productCardCon .contentCon .priceFlex h3 {
+    font-size: 30px;
+    font-family: "fraunces", serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.container .productCardCon .contentCon .priceFlex h4 {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.container .productCardCon .contentCon button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .productCardCon .contentCon button:hover {
+    background-color: hsl(158, 57%, 14%);
+}
+.container .productCardCon .contentCon button a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .productCardCon .contentCon button a img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.attribution {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Fraunces", serif;
+}
+.attribution a {
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+}
+.attribution a:hover {
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width:554px) {
+    .container {
+        max-width: 80%;
+        min-width: 60%;
+        height: fit-content;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+    .container .productCardCon {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .productCardCon .imgCon {
+        width: 100%;
+        height: 200px;
+    }
+    .container .productCardCon .imgCon img:last-child {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .productCardCon .imgCon img:first-child {
+        display: none;
+    }
+    .container .productCardCon .contentCon {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
